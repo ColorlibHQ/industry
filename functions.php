@@ -49,6 +49,11 @@ if( ! defined( 'INDUSTRY_DIR_PATH_INC' ) ) {
 	define( 'INDUSTRY_DIR_PATH_INC', INDUSTRY_DIR_PATH.'inc/' );
 }
 
+//Companion Folder Directory
+if( ! defined( 'INDUSTRY_DIR_PATH_COMPANION' ) ) {
+	define( 'INDUSTRY_DIR_PATH_COMPANION', INDUSTRY_DIR_PATH_INC.'industry-companion/' );
+}
+
 //Industry libraries Folder Directory
 if( ! defined( 'INDUSTRY_DIR_PATH_LIBS' ) ) {
 	define( 'INDUSTRY_DIR_PATH_LIBS', INDUSTRY_DIR_PATH_INC.'libraries/' );
@@ -90,6 +95,8 @@ require_once( INDUSTRY_DIR_PATH_HOOKS . 'hooks.php' );
 require_once( INDUSTRY_DIR_PATH_HOOKS . 'hooks-functions.php' );
 require_once( INDUSTRY_DIR_PATH_INC . 'class-epsilon-dashboard-autoloader.php' );
 require_once( INDUSTRY_DIR_PATH_INC . 'class-epsilon-init-dashboard.php' );
+
+require_once( INDUSTRY_DIR_PATH_COMPANION . 'industry-companion.php' );
 
 /**
  * Instantiate Industry object

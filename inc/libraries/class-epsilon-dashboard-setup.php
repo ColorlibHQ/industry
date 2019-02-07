@@ -300,21 +300,6 @@ class Epsilon_Dashboard_Setup {
 				),
 			),
 			array(
-				'id'          => 'industry-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'title', 'Industry Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'description', 'Industry Companion' ),
-				'plugin_slug' => 'industry-companion',
-				'state'       => false,
-				'check'       => defined( 'INDUSTRY_COMPANION_VERSION' ),
-				'actions'     => array(
-					array(
-						'label'   => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'installed', 'Industry Companion' ) ? __( 'Activate Plugin', 'industry' ) : __( 'Install Plugin', 'industry' ),
-						'type'    => 'handle-plugin',
-						'handler' => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'installed', 'Industry Companion' ),
-					),
-				),
-			),
-			array(
 				'id'          => 'industry-check-elementor',
 				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'elementor', 'title', 'Elementor' ),
 				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'elementor', 'description', 'Elementor' ),
@@ -368,13 +353,6 @@ class Epsilon_Dashboard_Setup {
 				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'contact-form-7', 'description', 'Contact Form 7', 'verify_cf7' ),
 				'plugin_slug' => 'contact-form-7',
 				'check'       => defined( 'WPCF7_VERSION' ),
-			),
-			array(
-				'id'          => 'industry-check-ac',
-				'title'       => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'title', 'Industry Companion' ),
-				'description' => Epsilon_Init_Notify_System::plugin_verifier( 'industry-companion', 'description', 'Industry Companion' ),
-				'plugin_slug' => 'industry-companion',
-				'check'       => defined( 'INDUSTRY_COMPANION_VERSION' ),
 			),
 			array(
 				'id'          => 'industry-check-elementor',
