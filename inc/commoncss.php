@@ -18,6 +18,9 @@ function industry_common_custom_css() {
     wp_enqueue_style( 'industry-common', get_template_directory_uri().'/assets/css/common.css' );
 		
 		$headerBg          =  ! empty( get_header_image() ) ? 'url(' . esc_url( get_header_image() ) . ')' : '';
+
+		$headerLeftTextColor = esc_attr( industry_opt( 'industry_header_left_text', '#fff' ) );
+		$headerLeftTextHoverColor = esc_attr( industry_opt( 'industry_header_phone_color', '#fab700' ) );
 		$headerTextColor   = esc_attr( industry_opt( 'industry_headertextcolor', '#fff' ) );
 		$headerbgcolor     = esc_attr( industry_opt( 'industry_headerbgcolor' ) );
 		$headerOverlay     = esc_attr( industry_opt( 'industry_headeroverlaycolor' ) );
@@ -40,6 +43,13 @@ function industry_common_custom_css() {
 		$phonecolor  	   = esc_attr( industry_opt( 'industry_header_phone_color' ) );
 
         $customcss ="
+            .header-top a{
+                color: {$headerLeftTextColor}
+            }
+            .header-top a:hover{
+                color: {$headerLeftTextHoverColor}
+            }
+        
 			.genric-btn.primary,
 			.genric-btn.primary-border:hover,
 			.default-switch input + label,
@@ -94,7 +104,6 @@ function industry_common_custom_css() {
 			.form-select .nice-select .list .option:hover,
 			.home-about-area .home-about-right .primary-btn:hover,
 			.top-head-right ul li:hover a,
-			.nav-menu ul li:hover > a,
 			#mobile-nav ul .menu-has-children i.fa-chevron-up,
 			.single-model .title h2,
 			.single-feature:hover h4,
@@ -208,9 +217,11 @@ function industry_common_custom_css() {
 			#header.header-scrolled {
 				background: {$stickynavbarbg};
 			}
-			.nav-menu a {
+			.nav-menu a,
+			.nav-menu ul li a {
 				color: {$navmenuColor};
 			}
+			.nav-menu ul li:hover > a,
 			.nav-menu li:hover > a, 
 			.nav-menu > .menu-active > a,
 			.nav-menu a:hover {

@@ -76,7 +76,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Header Top Left Text Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
-        'default'     => '#000000',
+        'default'     => '#fff',
     )
 );
 // Header Nav Bar Background Color Picker
@@ -84,10 +84,10 @@ Epsilon_Customizer::add_field(
     'industry_header_phone_color',
     array(
         'type'        => 'epsilon-color-picker',
-        'label'       => esc_html__( 'Header Top Phone Number Color', 'industry' ),
+        'label'       => esc_html__( 'Header Top Left Text Hover Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
-        'default'     => '#000000',
+        'default'     => '#fab700',
     )
 );
 // Header Nav Bar Background Color Picker
@@ -98,7 +98,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Header Nav Bar Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
-        'default'     => '',
+        'default'     => '#fff',
     )
 );
 // Header Sticky  Nav Bar Background Color Picker
@@ -109,7 +109,7 @@ Epsilon_Customizer::add_field(
         'label'       => esc_html__( 'Header Sticky Nav Bar Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
-        'default'     => '',
+        'default'     => '#fff',
     )
 );
 // Header Nav Bar Menu Color Picker

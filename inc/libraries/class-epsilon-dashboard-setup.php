@@ -1,6 +1,6 @@
 <?php
 /**
- * Industry Dashboard
+ * UmeetEvent Dashboard
  *
  * @package industry
  * @since   1.0
@@ -241,10 +241,6 @@ class Epsilon_Dashboard_Setup {
 				'integration' => true,
 				'recommended' => false,
 			),
-			'industry-companion' => array(
-				'integration' => true,
-				'recommended' => false,
-			),
 			'elementor' => array(
 				'integration' => true,
 				'recommended' => false,
@@ -252,21 +248,12 @@ class Epsilon_Dashboard_Setup {
 			'one-click-demo-import' => array(
 				'integration' => true,
 				'recommended' => false,
-			),
-			'simple-custom-post-order'  => array(
-				'integration' => false,
-				'recommended' => true,
-			),
-			'colorlib-login-customizer' => array(
-				'integration' => false,
-				'recommended' => true,
-			),
+			)
 
 		);
 
 		if ( ! $integrated ) {
 			unset( $arr['contact-form-7'] );
-			unset( $arr['industry-companion'] );
 			unset( $arr['elementor'] );
 			unset( $arr['one-click-demo-import'] );
 		}
@@ -431,7 +418,7 @@ class Epsilon_Dashboard_Setup {
 			$this->theme['theme-slug'] . '_recommended_actions' => get_option( $this->theme['theme-slug'] . '_recommended_actions', false ),
 			$this->theme['theme-slug'] . '_recommended_plugins' => get_option( $this->theme['theme-slug'] . '_recommended_plugins', false ),
 
-			
+
 		);
 
 		foreach ( $arr as $id => $val ) {

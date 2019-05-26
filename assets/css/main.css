@@ -1883,6 +1883,7 @@ blockquote,
 
 .header-top a {
   color: #fff;
+  margin-right: 10px;
 }
 
 .header-top ul li {
@@ -1955,7 +1956,7 @@ blockquote,
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  background: #fff !important;
+  background: #fff;
 }
 
 #header.header-scrolled {
@@ -1988,6 +1989,7 @@ blockquote,
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-width: 150px;
 }
 
 @media (max-width: 768px) {

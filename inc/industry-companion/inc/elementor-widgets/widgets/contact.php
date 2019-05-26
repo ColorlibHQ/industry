@@ -78,7 +78,7 @@ class Industry_Contact extends Widget_Base {
                 'label'       => esc_html__( 'Latitude', 'industry-companion' ),
                 'label_block' => true,
                 'type'        => Controls_Manager::TEXT,
-                'default'     => esc_html__( '23.745227', 'mosh-companion' )
+                'default'     => esc_html__( '23.745227', 'industry-companion' )
             ]
         );
         $this->add_control(
