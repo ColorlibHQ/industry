@@ -54,7 +54,7 @@
             $args = array(
                 'theme_location' => 'primary-menu',
                 'container'      => '',
-                'depth'          => 2,
+                'depth'          => 3,
                 'menu_class'     => 'nav-menu',
                 'fallback_cb'    => 'industry_bootstrap_navwalker::fallback',
                 'walker'         => new industry_bootstrap_navwalker(),

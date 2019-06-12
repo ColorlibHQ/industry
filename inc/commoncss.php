@@ -12,14 +12,13 @@ if( ! defined( 'ABSPATH' ) ) {
     exit( 'Direct script access denied.' );
 } 
 
-// enqueue css
+// enqueue css 
 function industry_common_custom_css() {
     
     wp_enqueue_style( 'industry-common', get_template_directory_uri().'/assets/css/common.css' );
 		
 		$headerBg          =  ! empty( get_header_image() ) ? 'url(' . esc_url( get_header_image() ) . ')' : '';
 
-		$headerLeftTextColor = esc_attr( industry_opt( 'industry_header_left_text', '#fff' ) );
 		$headerLeftTextHoverColor = esc_attr( industry_opt( 'industry_header_phone_color', '#fab700' ) );
 		$headerTextColor   = esc_attr( industry_opt( 'industry_headertextcolor', '#fff' ) );
 		$headerbgcolor     = esc_attr( industry_opt( 'industry_headerbgcolor' ) );
@@ -44,7 +43,7 @@ function industry_common_custom_css() {
 
         $customcss ="
             .header-top a{
-                color: {$headerLeftTextColor}
+                color: {$lefttextcolor}
             }
             .header-top a:hover{
                 color: {$headerLeftTextHoverColor}
