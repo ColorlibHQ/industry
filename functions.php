@@ -75,6 +75,15 @@ if( ! defined( 'INDUSTRY_DIR_PATH_WIDGET' ) ) {
 }
 
 
+
+// Admin Enqueue script
+function industry_admin_script(){
+    wp_enqueue_style( 'industry-admin', get_template_directory_uri().'/assets/css/industry_admin.css', false, '1.0.0' );
+    wp_enqueue_script( 'industry_admin', get_template_directory_uri().'/assets/js/industry_admin.js', false, '1.0.0' );
+}
+add_action( 'admin_enqueue_scripts', 'industry_admin_script' );
+
+
 /**
  * Include File
  *
