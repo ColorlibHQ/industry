@@ -513,7 +513,7 @@ class Industry_About extends Widget_Base {
                             <select name="uservice">
                                 <option value="1"><?php esc_html_e( 'Select', 'industry-companion' ) ?></option>
                                 <?php
-                                $companytypes = unserialize( get_option( 'companytypes' ) );
+                                $companytypes = unserialize( get_option( 'companytypes' ), array( 'allowed_classes' => false ) );
                                 if( is_array( $companytypes ) && count( $companytypes ) > 0 ) {
                                     foreach( $companytypes as $val ) {
                                         echo '<option value="' .esc_attr( $val ). '">' . esc_html( $val ) . '</option>';
