@@ -18,10 +18,10 @@ if( ! defined( 'ABSPATH' ) ) {
 
 
 // Theme Main Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_themecolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Main Color.', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_general_options_section',
@@ -31,7 +31,7 @@ Epsilon_Customizer::add_field(
 // Google map api key field
 $url = 'https://developers.google.com/maps/documentation/geocoding/get-api-key';
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_map_apikey',
     array(
         'type'              => 'text',
@@ -47,7 +47,7 @@ Epsilon_Customizer::add_field(
  * Header Section Fields
  ***********************************/
 // Header top left text
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_left_text',
     array(
         'type'        => 'text',
@@ -58,7 +58,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header top left text
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_phone',
     array(
         'type'        => 'text',
@@ -69,10 +69,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_lefttext',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Left Text Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -80,10 +80,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_phone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Top Left Text Hover Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -91,10 +91,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_navbar_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -102,10 +102,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Sticky  Nav Bar Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_navbarsticky_bgColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Sticky Nav Bar Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -113,10 +113,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Menu Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Menu Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -124,10 +124,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header Nav Bar Menu Hover Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Nav Bar Menu Hover Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -135,10 +135,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header sticky nav bar menu color picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_sticky_navbar_menuColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header Nav Bar Menu Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -146,10 +146,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header sticky nav bar menu hover color picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_header_sticky_navbar_menuHovColor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header Nav Bar Menu Hover Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_headertop_options_section',
@@ -157,10 +157,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Page Header Background Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_headerbgcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -168,10 +168,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Page Header text Color Picker
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_headertextcolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Text Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -179,20 +179,20 @@ Epsilon_Customizer::add_field(
     )
 );
 // Header overlay switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-headeroverlay-toggle-settings',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Toggle header overlay', 'industry' ),
         'section'     => 'colors',
         'sanitize_callback' => 'sanitize_text_field'
     )
 );
 // Header overlay color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_headeroverlaycolor',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Overlay Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'colors',
@@ -206,7 +206,7 @@ Epsilon_Customizer::add_field(
 
 
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_post_excerpt',
     array(
         'type'        => 'text',
@@ -218,17 +218,17 @@ Epsilon_Customizer::add_field(
     )
 );
 // Blog sidebar layout field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-blog-sidebar-settings',
     array(
-        'type'     => 'epsilon-layouts',
+        'type'     => 'colorlib-layouts',
         'label'    => esc_html__( 'Blog Layout', 'industry' ),
         'section'  => 'industry_blog_options_section',
         'description' => esc_html__( 'Select the option to set blog page sidebar position.', 'industry' ),
         'layouts'  => array(
-            '1' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/one-column.png',
-            '2' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleright.jpg',
-            '3' => get_template_directory_uri() . '/inc/libraries/epsilon-framework/assets/img/epsilon-section-titleleft.jpg',
+            '1' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-one-column.svg',
+            '2' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-right.svg',
+            '3' => get_template_directory_uri() . '/inc/customizer/colorlib-customizer/assets/img/layout-sidebar-left.svg',
         ),
         'default'  => array(
             'columnsCount' => 1,
@@ -250,10 +250,10 @@ Epsilon_Customizer::add_field(
 );
 if( defined( 'INDUSTRY_COMPANION_VERSION' ) ) {
 // Header social switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-blog-social-share-toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Social Share Show/Hide', 'industry' ),
         'section'     => 'industry_blog_options_section',
         'sanitize_callback' => 'sanitize_text_field'
@@ -261,10 +261,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header social switch field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-blog-like-toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Like Button Show/Hide', 'industry' ),
         'section'     => 'industry_blog_options_section',
         'sanitize_callback' => 'sanitize_text_field'
@@ -276,7 +276,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_fof_text_one',
     array(
         'type'              => 'text',
@@ -287,7 +287,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_fof_text_two',
     array(
         'type'              => 'text',
@@ -298,10 +298,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_fof_textonecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_fof_options_section',
@@ -309,10 +309,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_fof_texttwocolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_fof_options_section',
@@ -320,10 +320,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_fof_bgcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Page Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_fof_options_section',
@@ -336,10 +336,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-widget-toggle-settings',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'industry' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'industry' ),
         'section'     => 'industry_footer_options_section',
@@ -353,20 +353,20 @@ Epsilon_Customizer::add_field(
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s. Copyright &copy; %s  |  All rights reserved', 'industry' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
 
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry-copyright-text-settings',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'industry' ),
         'section'     => 'industry_footer_options_section',
         'default'     => wp_kses_post( $copyText ),
     )
 );
 // Footer widget background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_footer_bgColor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Background Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_footer_options_section',
@@ -374,10 +374,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_footer_color_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_footer_options_section',
@@ -385,10 +385,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_footer_widgettitlecolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widgets Title Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_footer_options_section',
@@ -396,10 +396,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_footer_anchorcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_footer_options_section',
@@ -407,10 +407,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // Footer widget anchor hover Color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'industry_footer_anchorhovcolor_settings',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'industry' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'industry_footer_options_section',
