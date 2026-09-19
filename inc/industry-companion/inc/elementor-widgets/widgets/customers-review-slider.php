@@ -98,23 +98,23 @@ class Industry_Customers_Review_Slider extends Widget_Base {
                             'options' => [
                                 '1' => [
                                     'title' => __( '1', 'industry-companion' ),
-                                    'icon' => 'fa fa-star',
+                                    'icon' => 'fa-solid fa-star',
                                 ],
                                 '2' => [
                                     'title' => __( '2', 'industry-companion' ),
-                                    'icon' => 'fa fa-star',
+                                    'icon' => 'fa-solid fa-star',
                                 ],
                                 '3' => [
                                     'title' => __( '3', 'industry-companion' ),
-                                    'icon' => 'fa fa-star',
+                                    'icon' => 'fa-solid fa-star',
                                 ],
                                 '4' => [
                                     'title' => __( '4', 'industry-companion' ),
-                                    'icon' => 'fa fa-star',
+                                    'icon' => 'fa-solid fa-star',
                                 ],
                                 '5' => [
                                     'title' => __( '5', 'industry-companion' ),
-                                    'icon' => 'fa fa-star',
+                                    'icon' => 'fa-solid fa-star',
                                 ],
                             ],
                     ],
@@ -362,9 +362,9 @@ class Industry_Customers_Review_Slider extends Widget_Base {
                                     for( $i = 1; $i <= 5; $i++ ) {
 
                                         if( $review['reviewstar'] >= $i ) {
-                                            echo '<span class="fa fa-star checked"></span>';
+                                            echo '<span class="fa-solid fa-star checked"></span>';
                                         } else {
-                                            echo '<span class="fa fa-star"></span>';
+                                            echo '<span class="fa-solid fa-star"></span>';
                                         }
                                     }
                                 echo '</div>';

@@ -148,83 +148,76 @@ final class Industry {
 		$scripts = array(
 			'style' => array(
 				array(
-					'handler'		=> 'google-font',
+					'handler'		=> 'industry-theme-google-font',
 					'file' 			=> $this->google_font(),
 				),
 				array(
-					'handler'		=> 'bootstrap',
+					'handler'		=> 'industry-theme-bootstrap',
 					'file' 			=> $cssPath.'bootstrap.css',
 					'dependency' 	=> array(),
-					'version' 		=> '4.0.0',
+					'version' 		=> '5.3.8-4',
 				),
 				array(
-					'handler'		=> 'font-awesome',
+					'handler'		=> 'industry-theme-font-awesome',
 					'file' 			=> $cssPath.'font-awesome.min.css',
 					'dependency' 	=> array(),
-					'version' 		=> '4.7.0',
+					'version' 		=> '7.3.1-1',
 				),
 				array(
-					'handler'		=> 'linearicons',
+					'handler'		=> 'industry-theme-linearicons',
 					'file' 			=> $cssPath.'linearicons.css',
 					'dependency' 	=> array(),
 					'version' 		=> '1.0',
 				),
 				array(
-					'handler'		=> 'nice-select',
+					'handler'		=> 'industry-theme-nice-select',
 					'file' 			=> $cssPath.'nice-select.css',
 					'dependency' 	=> array(),
 					'version' 		=> $this->industry_version,
 				),
 				array(
-					'handler'		=> 'industry-main',
+					'handler'		=> 'industry-theme-industry-main',
 					'file' 			=> $cssPath.'main.css',
 					'dependency' 	=> array(),
 					'version' 		=> $this->industry_version,
 				),
 				array(
-					'handler'		=> 'industry-style',
+					'handler'		=> 'industry-theme-industry-style',
 					'file' 			=> get_stylesheet_uri(),
 				),
 			),
 			'scripts' => array(
 
 				array(
-					'handler'		=> 'bootstrap',
+					'handler'		=> 'industry-theme-bootstrap',
 					'file' 			=> $jsPath.'bootstrap.min.js',
 					'dependency' 	=> array( 'jquery' ),
-					'version' 		=> '4.0.0',
+					'version' 		=> '5.3.8-4',
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'popper',
-					'file' 			=> $jsPath.'popper.min.js',
-					'dependency' 	=> array( 'jquery' ),
-					'version' 		=> '4.0.0',
-					'in_footer' 	=> true
-				),
-				array(
-					'handler'		=> 'jquery-nice-select',
+					'handler'		=> 'industry-theme-jquery-nice-select',
 					'file' 			=> $jsPath.'jquery.nice-select.min.js',
 					'dependency' 	=> array( 'jquery' ),
 					'version' 		=> '1.0',
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'jquery-sticky',
+					'handler'		=> 'industry-theme-jquery-sticky',
 					'file' 			=> $jsPath.'jquery.sticky.js',
 					'dependency' 	=> array( 'jquery' ),
 					'version' 		=> '1.0.0',
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'superfish',
+					'handler'		=> 'industry-theme-superfish',
 					'file' 			=> $jsPath.'superfish.min.js',
 					'dependency' 	=> array( 'jquery' ),
 					'version' 		=> '1.7.9',
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'industry-main',
+					'handler'		=> 'industry-theme-industry-main',
 					'file' 			=> $jsPath.'main.js',
 					'dependency' 	=> array( 'jquery', 'imagesloaded' ),
 					'version' 		=> $this->industry_version,
