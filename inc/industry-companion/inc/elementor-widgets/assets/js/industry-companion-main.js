@@ -23,10 +23,10 @@
 
 
     if( document.getElementById("default-select") ) {
-          $('select').niceSelect();
+          ColorlibUI.enhanceSelects('select');
     };
     if( document.getElementById("service-select") ) {
-          $('select').niceSelect();
+          ColorlibUI.enhanceSelects('select');
     };  
 
     //  Gallery
@@ -58,10 +58,7 @@
 
     //  Counter Js 
     if( $('.faq-area').length ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+        ColorlibUI.counter('.counter', { time: 1000 });
     }
     //
     $('.play-btn').magnificPopup({

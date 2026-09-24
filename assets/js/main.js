@@ -15,7 +15,7 @@
   var defaultSelect = $( '.default-select' );
 
      if( defaultSelect.length ){
-          $('select').niceSelect();
+          ColorlibUI.enhanceSelects('select');
     };
 
   // Initiate superfish on nav menu

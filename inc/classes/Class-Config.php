@@ -196,13 +196,6 @@ final class Industry {
 					'in_footer' 	=> true
 				),
 				array(
-					'handler'		=> 'industry-theme-jquery-nice-select',
-					'file' 			=> $jsPath.'jquery.nice-select.min.js',
-					'dependency' 	=> array( 'jquery' ),
-					'version' 		=> '1.0',
-					'in_footer' 	=> true
-				),
-				array(
 					'handler'		=> 'industry-theme-jquery-sticky',
 					'file' 			=> $jsPath.'jquery.sticky.js',
 					'dependency' 	=> array( 'jquery' ),
@@ -217,10 +210,17 @@ final class Industry {
 					'in_footer' 	=> true
 				),
 				array(
+					'handler'		=> 'industry-ui-js',
+					'file' 			=> $jsPath.'colorlib-ui.js',
+					'dependency' 	=> array(),
+					'version' 		=> '2.1.1',
+					'in_footer' 	=> true
+				),
+				array(
 					'handler'		=> 'industry-theme-industry-main',
 					'file' 			=> $jsPath.'main.js',
-					'dependency' 	=> array( 'jquery', 'imagesloaded' ),
-					'version' 		=> $this->industry_version,
+					'dependency' 	=> array( 'jquery', 'imagesloaded', 'industry-ui-js' ),
+					'version' 		=> $this->industry_version . '-s1',
 					'in_footer' 	=> true
 				),
 			)

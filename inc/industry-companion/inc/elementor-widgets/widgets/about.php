@@ -548,7 +548,7 @@ class Industry_About extends Widget_Base {
         ( function( $ ){
             
             if( document.getElementById("service-select") ) {
-                  $('select').niceSelect();
+                  window.ColorlibUI && window.ColorlibUI.enhanceSelects('select');
             };  
 
         })(jQuery);
