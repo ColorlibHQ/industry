@@ -14,6 +14,7 @@ function industry_sl_enqueue_scripts() {
 
 	wp_localize_script( 'industry-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'like'    => esc_html__( 'Like', 'industry-core' ),
 		'unlike'  => esc_html__( 'Unlike', 'industry-core' )
 	) );
 }
