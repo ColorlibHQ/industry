@@ -174,17 +174,24 @@ class Industry_Clients extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            
-            // Exibition widget owlCarousel
-            $('.active-review-carusel').owlCarousel({
-                items:2,
-                loop:true,
-                margin:30,
-                dots: true
-            });
-
-        })(jQuery);
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                // Exibition widget owlCarousel
+                UI.owl('.active-review-carusel', {
+                    items:2,
+                    loop:true,
+                    margin:30,
+                    dots: true
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

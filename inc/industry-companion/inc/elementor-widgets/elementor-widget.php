@@ -296,28 +296,19 @@ if ( !class_exists( 'Industry_El_Widgets' ) ) {
             // googleapis js
             wp_register_script( 'maps-googleapis', '//maps.googleapis.com/maps/api/js?key='.esc_attr( $apiKey ) );
 
-            // ajaxchimp js
-            wp_enqueue_script( 'jquery-ajaxchimp', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/jquery.ajaxchimp.min.js' , array('jquery'), '1.0', true );
 
-            // jquery waypoints js
-            wp_enqueue_script( 'jquery-magnific-popup', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/jquery.magnific-popup.min.js', array('jquery'), '1.0', true );
             
-            // jquery hexagons js
-            wp_enqueue_script( 'hexagons', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/hexagons.min.js', array('jquery'), '1.0', true );
 
 
 
 
-            // owl carousel js
-            wp_enqueue_script( 'owl-carousel', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/owl.carousel.min.js', array('jquery'), '1.0', true );
 
             // industry map custom js
-            wp_register_script( 'industry-map-custom', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'industry-map-custom', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/map-custom.js', array(), '1.0-s2', true );
 
-            wp_enqueue_script( 'justifiedGallery', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/jquery.justifiedGallery.min.js', array('jquery'), '1.0', true );
 
             // industry companion main js
-            wp_enqueue_script( 'industry-companion', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/industry-companion-main.js', array( 'jquery', 'industry-ui-js', 'jquery-ui-datepicker' ), '1.0-s1', true);
+            wp_enqueue_script( 'industry-companion', INDUSTRY_COMPANION_DIR_URL . 'inc/elementor-widgets/assets/js/industry-companion-main.js', array( 'industry-ui-js' ), '1.0-s2', true);
 
 
             wp_localize_script( 'industry-companion', 'ajax_object',

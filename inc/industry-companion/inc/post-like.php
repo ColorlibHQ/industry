@@ -10,7 +10,7 @@
 add_action( 'wp_enqueue_scripts', 'industry_sl_enqueue_scripts' );
 function industry_sl_enqueue_scripts() {
 
-	wp_enqueue_script( 'industry-post-likes', INDUSTRY_COMPANION_DIR_URL . 'js/post-likes.js', array( 'jquery' ), '0.5', false );
+	wp_enqueue_script( 'industry-post-likes', INDUSTRY_COMPANION_DIR_URL . 'js/post-likes.js', array( 'industry-ui-js' ), '0.5-s2', true );
 
 	wp_localize_script( 'industry-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),

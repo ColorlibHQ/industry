@@ -284,32 +284,39 @@ class Industry_Gallery extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            
-        // Exibition widget owlCarousel
-        $('.active-gallery').owlCarousel({
-            items:6,
-            loop:true,
-            dots: true,
-            autoplay:true,    
-                responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                900: {
-                    items: 6,
-                }
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                // Exibition widget owlCarousel
+                UI.owl('.active-gallery', {
+                    items:6,
+                    loop:true,
+                    dots: true,
+                    autoplay:true,    
+                        responsive: {
+                        0: {
+                            items: 1
+                        },
+                        480: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 2,
+                        },
+                        900: {
+                            items: 6,
+                        }
 
+                    }
+                });
             }
-        });
-
-        })(jQuery);
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

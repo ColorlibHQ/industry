@@ -545,13 +545,20 @@ class Industry_About extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            
-            if( document.getElementById("service-select") ) {
-                  window.ColorlibUI && window.ColorlibUI.enhanceSelects('select');
-            };  
-
-        })(jQuery);
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                if( document.getElementById("service-select") ) {
+                      UI.enhanceSelects('select');
+                };
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }
