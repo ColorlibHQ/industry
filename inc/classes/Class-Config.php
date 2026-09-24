@@ -179,7 +179,7 @@ final class Industry {
 					'handler'		=> 'industry-theme-industry-main',
 					'file' 			=> $cssPath.'main.css',
 					'dependency' 	=> array(),
-					'version' 		=> $this->industry_version,
+					'version' 		=> $this->industry_version . '-s3',
 				),
 				array(
 					'handler'		=> 'industry-theme-industry-style',
